@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_googleTagManager": {
+              "type": "object",
+              "require": false,
+              "legend": "Google Tag Manager",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Enable Google Tag Manager",
+                  "inputType": "Checkbox",
+                  "help": "Enable or disable GTM tracking for this course."
+                },
+                "_gtmId": {
+                  "type": "string",
+                  "require": true,
+                  "title": "Container ID",
+                  "inputType": "Text",
+                  "help": "Enter your GTM Container ID (e.g., GTM-XXXXXXX)."
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

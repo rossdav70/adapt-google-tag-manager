@@ -1,0 +1,25 @@
+{
+    "name": "adapt-google-tag-manager",
+    "displayName": "Google Tag Manager",
+    "version": "1.0.0",
+    "description": "Adapt plugin for Google Tag Manager integration.",
+    "main": "/js/adapt-google-tag-manager.js",
+    "author": "David Ross",
+    "extension" : "google-tag-manager",
+    "framework": ">=2.0.0",
+    "keywords": [
+      "adapt-plugin",
+      "adapt-extension",
+      "google",
+      "tag manager",
+      "gtm",
+      "tracking"
+    ],
+    "license": "GPL-3.0",
+    "targetAttribute": "_googleTagManager",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/rossdav/adapt-google-tag-manager.git"
+    }
+  }
+  
